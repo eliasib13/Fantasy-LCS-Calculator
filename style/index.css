@@ -1,0 +1,22 @@
+
+html {
+    height: 100%;
+    background-image: url(img/background_logo.png), -webkit-linear-gradient(#888888, #cccccc); /* Chrome, Safari */
+    background-image: url(img/background_logo.png), -moz-linear-gradient(#888888, #cccccc); /* Firefox */
+    background-image: url(img/background_logo.png), -o-linear-gradient(#888888, #cccccc); /* Opera */
+    background-image: url(img/background_logo.png), linear-gradient(#888888, #cccccc); /* Chrome, Safari */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    width: 65%;
+    text-align: center;
+    margin-top: 2%;
+};
+
+
+#header {
+    display: inline-block;
+    background-color: white;
+}
