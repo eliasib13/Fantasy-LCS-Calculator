@@ -11,7 +11,7 @@
         </div>
         
         <div id="wrapper">
-            <div id="player" class="expandible">Player</div>
+            <div id="player" class="expandible"><b>Player</b></div>
             <div id="form_player" class="form">
                 <table>
                     <tr><td>Kills:</td> <td><input id="kills" type="number" min="0"></td></tr>
@@ -22,19 +22,28 @@
                     <tr><td>Quadra kills:</td> <td><input id="quadra" type="number" min="0"></td></tr>
                     <tr><td>Penta kills:</td> <td><input id="penta" type="number" min="0"></td></tr>
                     <tr><td><br></td></tr>
-                    <tr><td><button id="sendPlayer">Calculate</button></td></tr>
+                    <tr><td><button id="sendPlayer" onclick="showPlayerScore()">Calculate</button></td><td><button id="clearPlayer" class="clear" onclick="clearPlayerScore()">Clear</button></td></tr>
                 </table>
+                <div id="res_player" class="result"></div>
             </div>
-            <div id="team" class="expandible">Team</div>
-            <div id="form_team" class="form"></div>
+            <div id="team" class="expandible"><b>Team</b></div>
+            <div id="form_team" class="form">
+                <table>
+                    <tr><td>Win:</td> <td><input id="win" type="checkbox"></td></tr>
+                    <tr><td>Dragons:</td> <td><input id="dragons" type="number" min="0"></td></tr>
+                    <tr><td>Baron Nashors:</td> <td><input id="barons" type="number" min="0"></td></tr>
+                    <tr><td>First blood:</td> <td><input id="firstblood" type="checkbox"></td></tr>
+                    <tr><td>Towers destroyed:</td> <td><input id="towers" type="number" min="0"></td></tr>
+                    <tr><td>Won in less than 30 minutes:</td> <td><input id="30mins" type="checkbox"></td></tr>
+                    <tr><td><br></td></tr>
+                    <tr><td><button id="sendTeam">Calculate</button></td><td><button id="clearTeam" class="clear">Clear</button></td></tr>
+                </table>
+                <div id="res_team" class="result"></div>
+            </div>
+
         </div>
         <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(".expandible").click(function() {
-                $expan = $(this);
-                $form = $expan.next();
-                $form.slideToggle(200, function() {});
-            });
-        </script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/player.js" type="text/javascript"></script>
     </body>
 </html>

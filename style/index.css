@@ -13,6 +13,7 @@ body {
     width: 65%;
     text-align: center;
     margin-top: 2%;
+    font-family: Tahoma, Geneva, sans-serif;
 };
 
 
@@ -40,4 +41,33 @@ body {
     text-align: left;
     margin: 2%;
     display: none;
+}
+
+
+.result {
+    text-align: center;
+    margin: 2%;
+    display: none;
+}
+
+.score {
+    background-color: #eeeeee;
+}
+
+.int {
+    color: green;
+    font-size: 26px;
+    vertical-align: text-bottom;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+.dec {
+    color: green;
+    font-size: 15px;
+    vertical-align: text-bottom;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
 }
