@@ -30,7 +30,9 @@ function showPlayerScore() {
         alert("Please, fill all numeric fields.");
     else {
         var int = parseInt(calc);
-        var dec = "" + (Math.round((calc - int)*100)/100);
+        var dec = (Math.round((calc - int)*100)/100).toString();
+        if (dec == 0) // If there is no decimal
+            dec = "0000";
 
         $("#res_player").html('<center class="score"><table><tr><td class="int">'+int+'<td><td class="dec">.'+dec.substring(2)+'</td></tr></table></center>');
         if ($("#res_player").css('display') == 'none')
