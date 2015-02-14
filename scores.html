@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Fantasy LCS Calculator</title>
         <link href="style/base.css" type="text/css" rel="stylesheet">
+        <link href="style/scores.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <div id="header">
@@ -15,6 +16,30 @@
             <a href="scores.html">Scoring</a>
             <a href="about.html">About</a>
         </nav>
-        
+        <div id="content">
+            <p>
+                <h3>Player Scoring:</h3>
+                <ul>
+                    <li>2 points per <b>kill</b></li>
+                    <li>-0.5 points per <b>death</b></li>
+                    <li>1.5 points per <b>assist</b></li>
+                    <li>0.01 points per <b>creep kill</b></li>
+                    <li>2 points for a <b>triple kill</b></li>
+                    <li>5 points for a <b>quadra kill</b> (doesn't also count as a triple kill)</li>
+                    <li>10 points for a <b>penta kill</b> (doesn't also count as a quadra kill)</li>
+                    <li>2 points if a player attains <b>10 or more assists or kills</b> in a game (this bonus only applies once)</li>
+                </ul>
+                <br>
+                <h3>Team Scoring:</h3>
+                <ul>
+                    <li>2 points per <b>win</b></li>
+                    <li>2 point per <b>Baron Nashor killed</b></li>
+                    <li>1 point per <b>Dragon killed</b></li>
+                    <li>2 points per <b>First Blood</b> earned</li>
+                    <li>1 point per <b>Tower destroyed</b></li>
+                    <li>2 points if the team <b>wins in less than 30 minutes</b></li>
+                </ul>
+            </p>
+        </div>
     </body>
 </html>
