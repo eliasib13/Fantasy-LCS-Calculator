@@ -34,9 +34,9 @@
                     <tr><td>Baron Nashors:</td> <td><input id="barons" type="number" min="0"></td></tr>
                     <tr><td>First blood:</td> <td><input id="firstblood" type="checkbox"></td></tr>
                     <tr><td>Towers destroyed:</td> <td><input id="towers" type="number" min="0"></td></tr>
-                    <tr><td>Won in less than 30 minutes:</td> <td><input id="30mins" type="checkbox"></td></tr>
+                    <tr><td>Won in less than 30 minutes:</td> <td><input id="_30mins" type="checkbox"></td></tr>
                     <tr><td><br></td></tr>
-                    <tr><td><button id="sendTeam">Calculate</button></td><td><button id="clearTeam" class="clear">Clear</button></td></tr>
+                    <tr><td><button id="sendTeam" onclick="showTeamScore()">Calculate</button></td><td><button id="clearTeam" class="clear" onclick="clearTeamScore()">Clear</button></td></tr>
                 </table>
                 <div id="res_team" class="result"></div>
             </div>
@@ -45,5 +45,6 @@
         <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
         <script src="js/player.js" type="text/javascript"></script>
+        <script src="js/team.js" type="text/javascript"></script>
     </body>
 </html>
