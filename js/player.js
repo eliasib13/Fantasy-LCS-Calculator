@@ -11,13 +11,13 @@ var PENTAS = 10;
 function scorePlayer() {
     var k = $("#kills").val();
     var a = $("#assists").val();
-    var sum = parseInt(k) * KILLS +
-              parseInt($("#deaths").val()) * DEATHS + 
-              parseInt(a) * ASSISTS + 
-              parseInt($("#cs").val()) * CS +
-              parseInt($("#triple").val()) * TRIPLES +
-              parseInt($("#quadra").val()) * QUADRAS +
-              parseInt($("#penta").val()) * PENTAS;
+    var sum = Math.abs(parseInt(k)) * KILLS +
+              Math.abs(parseInt($("#deaths").val())) * DEATHS + 
+              Math.abs(parseInt(a)) * ASSISTS + 
+              Math.abs(parseInt($("#cs").val())) * CS +
+              Math.abs(parseInt($("#triple").val())) * TRIPLES +
+              Math.abs(parseInt($("#quadra").val())) * QUADRAS +
+              Math.abs(parseInt($("#penta").val())) * PENTAS;
     
     return (k >= 10 || a >= 10) ? sum + 2 : sum;
 }

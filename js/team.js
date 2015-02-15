@@ -8,9 +8,9 @@ var _30MINS = 2;
 
 // Calculate score
 function scoreTeam() {
-    var sum = parseInt($("#dragons").val()) * DRAGONS + 
-              parseInt($("#barons").val()) * BARONS +
-              parseInt($("#towers").val()) * TOWERS;
+    var sum = Math.abs(parseInt($("#dragons").val())) * DRAGONS + 
+              Math.abs(parseInt($("#barons").val())) * BARONS +
+              Math.abs(parseInt($("#towers").val())) * TOWERS;
     //console.log(sum);
     $("#win").prop("checked") ? sum += WIN : sum += 0;
     $("#firstblood").prop("checked") ? sum += FIRST_BLOOD : sum += 0;
